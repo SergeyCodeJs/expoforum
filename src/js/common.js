@@ -1,0 +1,1 @@
+console.log('Ready to work Mr. Sergey Stekh, awaiting for your commands!')

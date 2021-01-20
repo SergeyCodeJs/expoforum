@@ -1,0 +1,94 @@
+@import "utils/normalize";
+@import '../css/bootstrap.min.css';
+@import "../css/fontawesome.min.css";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "modules/header";
+@import "modules/main-section";
+@import "modules/footer";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+
+html {
+  line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  font-family: $mainFont;
+	font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(255, 255, 255, 1);
+  background: #B1B3B3;
+}
+
+main {
+  margin: 0 auto;
+}
+
+*, *:before, *:after { box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {     margin: 0; 
+padding: 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: $sndFont;
+  font-weight: 700;
+  font-size: 55px;
+}
+
+h3 {
+font-size: 21px;
+font-weight: 500;
+font-family: $sndFont;
+}
+
+p {
+  margin: 0;
+}
+
+a { 
+  display: block;
+  text-decoration: none; 
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+    &:hover {
+      opacity: 0.7;
+      color: rgba(255, 255, 255, 1);
+      border: 0;
+      text-decoration: none;
+    }
+}
+
+ul, li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+
+.no-margin {
+  margin-right: 0px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 43px;
+  }
+  
+  h3 {
+  font-size: 13px;
+  }
+}
